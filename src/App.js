@@ -50,22 +50,25 @@
 
 // ✅ All imports must be at the top
 import React from "react";
+import "./App.css";
+import "@fontsource/poppins";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import PageNotFound from './pages/PageNotFound';
-import LoginRouter from './components/auth/LoginRouter';
-import ImpExpRegister from './components/auth/ImpExpRegister';
-import ForgotPassword from './components/auth/ForgotPassword';
-import ForgotPasswordLink from './components/auth/ForgotPasswordLink';
-import ResetPassword from './components/auth/ResetPassword';
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
+import LoginRouter from "./components/auth/LoginRouter";
+import ImpExpRegister from "./components/auth/ImpExpRegister";
+import ForgotPassword from "./components/auth/ForgotPassword";
+import ForgotPasswordLink from "./components/auth/ForgotPasswordLink";
+import ResetPassword from "./components/auth/ResetPassword";
 
 // {/* admin, imp-exp, icmr, committee */ }
-import Layouts from './admin_components/Layouts';
-import Dashboard from './admin_components/admin/Dashboard';
+import Layouts from "./admin_components/Layouts";
+import Dashboard from "./admin_components/admin/Dashboard";
 
 function App() {
   return (
@@ -120,4 +123,3 @@ function App() {
 }
 
 export default App;
-
